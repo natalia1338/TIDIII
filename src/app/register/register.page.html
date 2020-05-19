@@ -1,0 +1,95 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Cadastro Do Associado</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list inset>
+    
+    <ion-item>
+      <ion-label >CPF</ion-label>
+      <ion-input color="tertiary" type="int"  value="" [(ngModel)]="cadastrodata.CPF"> </ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label >RG</ion-label>
+      <ion-input color="tertiary" type="int"  value="" [(ngModel)]="cadastrodata.RG"> </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label >Telefone</ion-label>
+      <ion-input color="tertiary" type="int"  value="" [(ngModel)]="cadastrodata.Telefone"> </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label >Nome da mae</ion-label>
+      <ion-input color="tertiary" type="string"  value="" [(ngModel)]="cadastrodata.Nome_da_mae"> </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label >Nome do pai</ion-label>
+      <ion-input color="tertiary" type="string"  value="" [(ngModel)]="cadastrodata.Nome_do_pai"> </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label >CEP</ion-label>
+      <ion-input color="tertiary" type="int"  value="" [(ngModel)]="cadastrodata.CEP"> </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label >Rua</ion-label>
+      <ion-input color="tertiary" type="string"  value="" [(ngModel)]="cadastrodata.Rua"> </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label >Numero</ion-label>
+      <ion-input color="tertiary" type="int"  value="" [(ngModel)]="cadastrodata.numero"> </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label >Cidade</ion-label>
+      <ion-input color="tertiary" type="string"  value="" [(ngModel)]="cadastrodata.Cidade"> </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label >Estado</ion-label>
+      <ion-input color="tertiary" type="string"  value="" [(ngModel)]="cadastrodata.Estado"> </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label >Pais</ion-label>
+      <ion-input color="tertiary" type="string"  value="" [(ngModel)]="cadastrodata.Pais"> </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label >Nome Completo</ion-label>
+      <ion-input color="tertiary" type="string"  value="" [(ngModel)]="cadastrodata.Nome_completo"> </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label >Data de Nascimento</ion-label>
+      <ion-input color="tertiary" type="string"  value="" [(ngModel)]="cadastrodata.Data_de_nascimento"> </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label >Email</ion-label>
+      <ion-input color="tertiary" type="string"  value="" [(ngModel)]="cadastrodata.Email"> </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label >Senha</ion-label>
+      <ion-input color="tertiary" type="text" value="" [(ngModel)]="cadastrodata.Senha"> </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label >Confirmar Senha</ion-label>
+      <ion-input color="tertiary" type="text" value="" [(ngModel)]="cadastrodata.c_senha"> </ion-input>
+    </ion-item>
+
+  </ion-list>
+<ion-button full (click)="Cadastro()" expand="block" color="tertiary">Cadastrar</ion-button>
+</ion-content>

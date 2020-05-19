@@ -1,0 +1,62 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Fornecedor</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list >
+    
+    <ion-item>
+      <ion-label >Nome do Fornecedor</ion-label>
+      <ion-input color="tertiary" type="string"  value="" [(ngModel)]="fornecedor.Nome_fornecedor"> </ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label >CNPJ</ion-label>
+      <ion-input color="tertiary" type="int"  value="" [(ngModel)]="fornecedor.Cnpj"> </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label >Rua</ion-label>
+      <ion-input color="tertiary" type="string"  value="" [(ngModel)]="fornecedor.Rua"> </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label >Número</ion-label>
+      <ion-input color="tertiary" type="int"  value="" [(ngModel)]="fornecedor.Numero"> </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label >Cidade</ion-label>
+      <ion-input color="tertiary" type="string"  value="" [(ngModel)]="fornecedor.Cidade"> </ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label >CEP</ion-label>
+      <ion-input color="tertiary" type="int"  value="" [(ngModel)]="fornecedor.Cep"> </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label >Estado</ion-label>
+      <ion-input color="tertiary" type="string"  value="" [(ngModel)]="fornecedor.Estado"> </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label >País</ion-label>
+      <ion-input color="tertiary" type="int"  value="" [(ngModel)]="fornecedor.Pais"> </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label >Contato</ion-label>
+      <ion-input color="tertiary" type="int"  value="" [(ngModel)]="fornecedor.Contato"> </ion-input>
+    </ion-item>
+  </ion-list>
+
+<ion-button full (click)="Cadastro()" expand="block" color="tertiary">Finalizar</ion-button>
+</ion-content>
+
+

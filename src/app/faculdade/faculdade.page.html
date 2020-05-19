@@ -1,0 +1,62 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Cadastro da Faculdade</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-list >
+    
+    <ion-item>
+      <ion-label >Nome da instituição</ion-label>
+      <ion-input color="tertiary" type="string"  value="" [(ngModel)]="faculdade.Nome_da_instituicao"> </ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label >CNPJ</ion-label>
+      <ion-input color="tertiary" type="int"  value="" [(ngModel)]="faculdade.Cnpj"> </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label >Rua</ion-label>
+      <ion-input color="tertiary" type="string"  value="" [(ngModel)]="faculdade.Rua"> </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label >Número</ion-label>
+      <ion-input color="tertiary" type="int"  value="" [(ngModel)]="faculdade.Numero"> </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label >Cidade</ion-label>
+      <ion-input color="tertiary" type="string"  value="" [(ngModel)]="faculdade.Cidade"> </ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label >CEP</ion-label>
+      <ion-input color="tertiary" type="int"  value="" [(ngModel)]="faculdade.Cep"> </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label >Estado</ion-label>
+      <ion-input color="tertiary" type="string"  value="" [(ngModel)]="faculdade.Estado"> </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label >País</ion-label>
+      <ion-input color="tertiary" type="int"  value="" [(ngModel)]="faculdade.Pais"> </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label >Contato</ion-label>
+      <ion-input color="tertiary" type="int"  value="" [(ngModel)]="faculdade.Contato"> </ion-input>
+    </ion-item>
+  </ion-list>
+  
+<ion-button full (click)="Cadastro()" expand="block" color="tertiary">Finalizar</ion-button>
+</ion-content>
+
